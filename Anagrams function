@@ -1,0 +1,15 @@
+def anagrams(word, words):
+
+    example = list(word)
+    set1 = set(example)
+    anagrams = []
+    
+    for item in words:
+        alphabet = list(item)
+        set2 = set(alphabet)
+        if len(alphabet) == len(example):
+            if set2 == set1:
+                anagrams.append(item)
+                    
+                
+    return anagrams
